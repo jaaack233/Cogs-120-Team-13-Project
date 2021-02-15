@@ -1,0 +1,75 @@
+.screen {
+    width: 365px;
+    height: 812px;
+    border: 1px solid black;
+    position: relative;
+}
+
+h2 {
+    text-align: left;
+}
+
+.center {
+    margin: auto;
+    width: 280px;
+    height: 600px;
+    display: block;
+    background-color: green;
+    text-align: center;
+    position: relative;
+}
+
+.btn-start {
+    height: 140px;
+    width: 140px;
+    left: auto;
+    right: auto;
+    bottom: 0px;
+    border-radius: 50%;
+    border: none;
+    background-color: #606060;
+    color: white;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.btn-start:hover {
+    width: 144px;
+    height: 144px;
+    border: 2px solid greenyellow;
+}
+
+.switch {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+}
+
+#burger {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #808080; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
