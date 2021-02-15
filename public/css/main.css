@@ -63,6 +63,8 @@ h2 {
 }
 
 #sidebar {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 0;
     position: absolute; /* Stay in place */
@@ -72,4 +74,10 @@ h2 {
     background-color: #808080; /* Black fallback color */
     overflow-x: hidden; /* Disable horizontal scroll */
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.btn-nav {
+    display: block;
+    width: 90%;
+    height: 40px;
 }
