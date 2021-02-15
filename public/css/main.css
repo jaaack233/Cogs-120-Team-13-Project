@@ -11,12 +11,21 @@ h2 {
 
 .center {
     margin: auto;
-    width: 280px;
+    width: 260px;
     height: 600px;
     display: block;
-    background-color: green;
     text-align: center;
     position: relative;
+}
+
+#figure {
+    width: 400px;
+    transform: translate(-50px, 40px);
+}
+
+#level {
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
 .btn-start {
@@ -24,7 +33,7 @@ h2 {
     width: 140px;
     left: auto;
     right: auto;
-    bottom: 0px;
+    bottom: 30px;
     border-radius: 50%;
     border: none;
     background-color: #606060;
