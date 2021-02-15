@@ -18,6 +18,13 @@ h2 {
     position: relative;
 }
 
+.money {
+    margin: 10px 0 0 200px; 
+    font-size: 30px;
+    background-color: #909090;
+    border-radius: 5px;
+}
+
 #figure {
     width: 400px;
     transform: translate(-50px, 40px);
