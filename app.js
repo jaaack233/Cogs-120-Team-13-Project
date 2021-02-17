@@ -10,6 +10,7 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var main = require('./routes/main');
+var countdown = require('./routes/countdown')
 // Example route
 // var user = require('./routes/user');
 
@@ -39,6 +40,7 @@ app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
 app.get('/main', main.view);
+app.get('/countdown', countdown.view)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
