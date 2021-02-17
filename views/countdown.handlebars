@@ -1,18 +1,36 @@
 <html>
-    <head>
-         <link rel="stylesheet" href="/css/countdown.css">
-         <script src="/js/focus.js"></script>
-    </head>
-    <body>
-        <div class="screen">
-            <div style="display: inline;">
-                <img id="burger" src="/icon/burger.png" alt="" onclick="openNav()">
-            </div>
-            <div class="center">
-                <h4 id="task">Finish A1</h4>
-                <h4 id="task">Take Quiz2</h4>
-                <img id="checkbox" src="/icon/checkbox.png" alt="">       
+
+<head>
+    <link rel="stylesheet" href="/css/countdown.css">
+    <script src="/js/focus.js"></script>
+</head>
+
+<body>
+    <div class="screen">
+        <div id="tasks">
+            <p><input type="checkbox" name="" id="1"><label for="1"> Finish A1</label></p>  
+            <p><input type="checkbox" name="" id="2"><label for="2"> Quiz 2</label></p>
         </div>
-        
-    </body>
+        <div class="clock">
+            <div class="time-display">
+                <span id="h">00</span>
+                <span>:</span>
+                <span id="m">50</span>
+                <span>:</span>
+                <span id="s">00</span>
+            </div>
+        </div>
+        <div class="ticket-area">
+            <div class="ticket-display">
+                <img id="ticket" src="/icon/ticket.png" alt="">
+                <div id="ticket-val">5 mins</div>
+            </div>
+            <div><img id="mult" src="icon/mult.png" alt=""></div>
+            <div id="ticket-num">5</div>
+        </div>
+        <button id="break">Enter Break</button>
+        <button id="quit">Quit</button>
+    </div>
+</body>
+
 </html>

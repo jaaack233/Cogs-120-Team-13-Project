@@ -3,17 +3,132 @@
     height: 812px;
     border: 1px solid black;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
-h4 {
-    text-align: center;
+#tasks {
+    margin-top: 50px;
+    font-size: 25px;
+    height: 150px;
+    width: 200px;
+    background-color: grey;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: scroll;
 }
 
-.center {
-    margin: auto;
-    width: 260px;
-    height: 600px;
+.clock {
+    left: 0;
+    top: 0;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background-color: #707070;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    z-index: 1;
+    position: absolute;
+}
+
+.clock::before {
+    width: 200px;
+    height: 200px;
+    content: "";
+    border-radius: 50%;
+    background-color: white;
     display: block;
-    text-align: center;
     position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+}
+
+.time-display {
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked + label{
+    text-decoration: line-through;
+}
+
+.ticket-area {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 240px;
+    left: 50%;
+    top: 60%;
+    position: absolute;
+    transform: translate(-50%, 40%);
+    justify-content: space-between;
+}
+
+.ticket-display {
+    position: relative;
+    text-align: center;
+}
+
+#ticket {
+    width: 100px;
+    position: relative;
+    top: -25px;
+    left: -10px;
+}
+
+#ticket-val {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+}
+
+#mult {
+    width: 40px;
+    position: relative;
+    top: 5px;
+    transform: translateX(-15px);
+}
+
+#ticket-num {
+    margin-top: -1px;
+    margin-right: 10px;
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 50px;
+    height: 50px;
+}
+
+#break {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 50%;
+    top :75%;
+    border: none;
+    border-radius: 5px;
+    transform: translateX(-50%);
+}
+
+#quit {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    left: 50%;
+    top :85%;
+    border: none;
+    border-radius: 5px;
+    transform: translateX(-50%);
 }
