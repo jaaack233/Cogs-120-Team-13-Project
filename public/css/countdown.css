@@ -1,0 +1,19 @@
+.screen {
+    width: 365px;
+    height: 812px;
+    border: 1px solid black;
+    position: relative;
+}
+
+h4 {
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 260px;
+    height: 600px;
+    display: block;
+    text-align: center;
+    position: relative;
+}
