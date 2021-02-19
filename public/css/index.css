@@ -4,6 +4,7 @@
     text-align: center;
     justify-content: center;
     position: relative;
+    border:5px solid black;
 }
 
 .btn {
@@ -27,6 +28,6 @@ h1 {
 }
 
 #start {
-    background: #0F765A;
-    color: white;
+    background: white;
+    color: black;
 }
