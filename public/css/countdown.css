@@ -38,11 +38,12 @@ svg {
 }
 
 .circle {
-    stroke-dasharray: 700;
+    stroke-dasharray: 691;
     stroke-dashoffset: 0;
     transform-origin: center;
     transform: rotate(-90deg);
-    animation: countdown 6s;
+    animation: countdown 10s;
+    animation-timing-function: linear;
 }
 
 .time-display {
@@ -138,6 +139,6 @@ input:checked + label{
     }
 
     100% {
-        stroke-dashoffset: 700;
+        stroke-dashoffset: 691;
     }
 }
