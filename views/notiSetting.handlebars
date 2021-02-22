@@ -2,23 +2,92 @@
 <head>
 	<title>Notification Setting</title>
 	<link rel="stylesheet" href="/css/notiSetting.css">
+	<style>
+	.switch {
+  	position: relative;
+  	display: inline-block;
+  	width: 60px;
+  	height: 34px;
+	}
+
+	.switch input { 
+	  opacity: 0;
+	  width: 0;
+	  height: 0;
+	}
+
+	.slider.round {
+	  position: absolute;
+	  cursor: pointer;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background-color: #ccc;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+
+	.slider.round:before {
+	  position: absolute;
+	  content: "";
+	  height: 26px;
+	  width: 26px;
+	  left: 4px;
+	  bottom: 4px;
+	  background-color: white;
+	  -webkit-transition: .4s;
+	  transition: .4s;
+	}
+	input:checked + .slider {
+	  background-color: green;
+	}
+
+	input:focus + .slider {
+	  box-shadow: 0 0 1px #2196F3;
+	}
+
+	input:checked + .slider:before {
+	  -webkit-transform: translateX(26px);
+	  -ms-transform: translateX(26px);
+	  transform: translateX(26px);
+	}
+
+	/* Rounded sliders */
+	.slider.round {
+	  border-radius: 34px;
+	}
+
+	.slider.round:before {
+	  border-radius: 50%;
+	}
+	</style>
 </head>
+
 <body>
 	<div class="screen">
 		<h2>Apps Notification</h2>
 		<h3>Select the apps that you want to receive notifications while focusing: </h3>
-		<button class="btn">Next</button>
-		<!-- Rectangular switch -->
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider"></span>
-</label>
+		<div class="appIcon">
+			<div class ="column" style="display : inline;">
+				<div class = "app" id ="app1">
+					<img src="/icon/facebook.png" style="height: 35px; width: 35px; margin-right: 10px">
+					<label class="switch">
+	  					<input type="checkbox" checked>
+	  					<span class="slider round"></span>
+					</label>
+				</div>
 
-<!-- Rounded switch -->
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>
+				<div class = "app" id ="app2">
+					<img src="/icon/ins.jpg" style="height: 35px; width: 35px; margin-right: 10px">
+					<label class="switch">
+	  					<input type="checkbox" checked>
+	  					<span class="slider round"></span>
+					</label>
+				</div>
+			</div>
+		</div>
+	<button class="btn">Next</button>
 	</div>
 </body>
 </html>
