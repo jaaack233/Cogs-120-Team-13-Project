@@ -8,22 +8,27 @@
 }
 
 .btn {
-    background-color: #4CAF50;
-    margin-top: 80px;
-	font-size: 18px;
-	padding: 12px 28px;
-	border-radius: 8px;
-	color: white;
-	justify-content: center;
+    left: 0;
+    top: 100px;
+    background-color: #FBE8A6;
+    width: 50%;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    position: absolute;
+    transform: translate(50%, 1100%);
+    font-size: 18px;
+    box-shadow: 5px 5px 10px #aaaaaa;
+    justify-content: center;
 }
 
 h2 {
     color: white;
     margin-top: 0;
-    padding-top: 17px;
+    padding-top: 25px;
     padding-bottom: 0;
-    height: 50px;
-    background-color: #0F765A;
+    height: 60px;
+    background-color: #303C6C;
     padding: auto;
     border: none;
     text-align: center;
