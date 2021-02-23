@@ -13,6 +13,7 @@ var main = require('./routes/main');
 var countdown = require('./routes/countdown');
 var taskSetting = require('./routes/taskSetting');
 var notiSetting = require('./routes/notiSetting');
+var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get('/main', main.view);
 app.get('/countdown', countdown.view);
 app.get('/tasksetting', taskSetting.view);
 app.get('/notisetting', notiSetting.view);
+app.get('/login',login.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
