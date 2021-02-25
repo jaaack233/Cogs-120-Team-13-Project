@@ -1,3 +1,4 @@
+
 /* Open when someone clicks on the span element */
 function openNav() {
   document.getElementById("sidebar").style.width = "50%";
@@ -9,6 +10,30 @@ function closeNav() {
 }
 
 // functions for countdown
+
+$("#btn-no").click(function(){
+  $(".modal").css("display", "none");
+});
+
+$("#quit").click(function(){
+  $(".modal#warning").css("display", "block");
+});
+
+$("#break").click(function(){
+  $(".modal#rest").css("display", "block");
+});
+
+$("#break").click(function(){
+  $(".modal#rest").css("display", "block");
+  $(".circle").css("animation-play-state", "paused");
+});
+
+$("#continue").click(function(){
+  $(".circle").css("animation-play-state", "running");
+  $(".modal#rest").css("display", "none");
+});
+
+
 
 // functions for tasks
 
@@ -31,11 +56,32 @@ $(".fa-plus").click(function (){
   $("input[type='text']").fadeToggle(300);
 });
 
-$(".roller li").click(function(){
-  const dis = $(this).position().top;
-  if (dis===60) {
-    alert($(this).text());
-  } else {
-    alert("bad");
-  }
+// method for set clock
+
+$("#next").click(function() {
+  // data["jic006"]["tasks"].push({});
+  const time = {};
+
+  $("#hour li").each(function () {
+    const dis = $(this).position().top;
+    if (dis==60) {
+      time["hour"] = $(this).text();
+    //   let tasks = data["jic006"]["tasks"];
+    //   tasks[tasks.length - 1]["hour"] = element.text();
+    //   time["hour"] = element.text();
+    }
+  });
+
+  $("#min li").each(function () {
+    const dis = $(this).position().top;
+    if (dis==60) {
+      time["min"] = $(this).text();
+    //   let tasks = data["jic006"]["tasks"];
+    //   tasks[tasks.length - 1]["min"] = element.text();
+    //   time["min"] = element.text();
+    }
+  });
+
+  console.log(time);
 });
+
