@@ -30,3 +30,12 @@ $("input[type = 'text']").on("keypress", function(event){
 $(".fa-plus").click(function (){
   $("input[type='text']").fadeToggle(300);
 });
+
+$(".roller li").click(function(){
+  const dis = $(this).position().top;
+  if (dis===60) {
+    alert($(this).text());
+  } else {
+    alert("bad");
+  }
+});
