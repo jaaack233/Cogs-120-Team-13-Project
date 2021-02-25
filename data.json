@@ -2,6 +2,7 @@
 	"j7sun": {
 		"username": "Mark",
 		"password": "sjl120",
+		"credits": 100,
 		"friend": [
 			{
 				"name": "Mark",
@@ -32,6 +33,7 @@
 	"jic006": {
 		"username": "Jack",
 		"password": "cjd110",
+		"credits": 100,
 		"friend": [
 			{
 				"name": "Mark",
@@ -62,6 +64,7 @@
 	"y9feng": {
 		"username": "Candace",
 		"password": "fym911",
+		"credits": 100,
 		"friend": [
 			{
 				"name": "Mark",
