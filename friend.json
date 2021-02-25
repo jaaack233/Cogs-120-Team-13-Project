@@ -1,0 +1,112 @@
+
+
+
+{"user": [{
+	"username": "j7sun",
+	"password": "sjl120",
+	"friend": [
+		{
+			"name" : "Mark",
+			"status" : 
+				{
+					"level" : "intern",
+					"credits" : 50,
+					"task" : "A2"
+				}	
+		},
+		
+		{
+			"name" : "Jack",
+			"status" : 
+				{
+					"level" : "general staff",
+					"credits" : 500,
+					"task" : "A3"
+				}	
+		},
+
+		{
+			"name" : "Candace",
+			"status":
+			{
+				"level":"manager",
+				"credits":5000,
+				"task":"A4"
+			}
+		}
+	]
+},
+
+	{"username": "jic006",
+	"password": "cjd110",
+	"friend": [
+		{
+			"name" : "Mark",
+			"status" : 
+				{
+					"level" : "intern",
+					"credits" : 50,
+					"task" : "A2"
+				}	
+		},
+		
+		{
+			"name" : "Jack",
+			"status" : 
+				{
+					"level" : "general staff",
+					"credits" : 500,
+					"task" : "A3"
+				}	
+		},
+
+		{
+			"name" : "Candace",
+			"status":
+			{
+				"level":"manager",
+				"credits":5000,
+				"task":"A4"
+			}
+		}
+	]
+},
+	
+	{"username": "y9feng",
+	"password": "fym911",
+	"friend": [
+		{
+			"name" : "Mark",
+			"status" : 
+				{
+					"level" : "intern",
+					"credits" : 50,
+					"task" : "A2"
+				}	
+		},
+		
+		{
+			"name" : "Jack",
+			"status" : 
+				{
+					"level" : "general staff",
+					"credits" : 500,
+					"task" : "A3"
+				}	
+		},
+
+		{
+			"name" : "Candace",
+			"status":
+			{
+				"level":"manager",
+				"credits":5000,
+				"task":"A4"
+			}
+		}
+	]	
+	}
+]}	
+
+
+
