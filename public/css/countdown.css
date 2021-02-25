@@ -44,6 +44,7 @@ svg {
     transform: rotate(-90deg);
     animation: countdown 10s;
     animation-timing-function: linear;
+    animation-play-state: running;
 }
 
 .time-display {
@@ -131,6 +132,31 @@ input:checked + label{
     border: none;
     border-radius: 5px;
     transform: translateX(-50%);
+}
+
+.modal {
+    position: absolute;
+    width: 80%;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    background-color: #909090;
+    border-radius: 10px;
+    display: none;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#btn-yes {
+    width: 100px;
+    height: 30px;
+    background-color: red;
+}
+
+#btn-no {
+    width: 100px;
+    height: 30px;
+    background-color: green;
 }
 
 @keyframes countdown{
