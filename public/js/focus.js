@@ -56,6 +56,12 @@ $(".fa-plus").click(function (){
   $("input[type='text']").fadeToggle(300);
 });
 
+setInterval(function(){
+  var total = parseInt($('input[name="ticket_val"]').text()) * parseInt($('input[name="ticket_num"]').text());
+  $('.boxh2').text(total);
+},500);
+
+
 // method for set clock
 
 $("#next").click(function() {
