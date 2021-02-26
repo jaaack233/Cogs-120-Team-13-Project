@@ -14,9 +14,13 @@ var countdown = require('./routes/countdown');
 var taskSetting = require('./routes/taskSetting');
 var notiSetting = require('./routes/notiSetting');
 var login = require('./routes/login');
+<<<<<<< HEAD
+var ticket = require('./routes/ticket')
+=======
 var indivisual = require('./routes/indivisual');
 var groups = require('./routes/groups');
 var ticket = require('./routes/ticket');
+>>>>>>> 25a32ac3d9f4ae30f01b377f3a97940e8b1b272e
 const { Collection } = require('mongoose');
 // Example route
 // var user = require('./routes/user');
