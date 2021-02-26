@@ -50,8 +50,12 @@ app.get('/countdown', countdown.view);
 app.get('/tasksetting', taskSetting.view);
 app.get('/notisetting', notiSetting.view);
 app.get('/login',login.view);
+<<<<<<< HEAD
 app.get('/indivisual', indivisual.view);
 app.get('/groups', groups.view);
+=======
+app.get('/ticket',ticket.view);
+>>>>>>> 8314334a1e58ec9bcc48097d1699e7aa2f983cf3
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
