@@ -3,47 +3,51 @@
 <head>
 
 	<title>ticket</title>
-    <link rel="stylesheet" href="/css/ticket.css">
+	<link rel="stylesheet" href="/css/ticket.css">
 
 </head>
 
 
-	<header>
+<body>
 
-	<div class = "container">
+	<div class="container">
 
-		<div id = "page_title">
+		<div id="page_title">
 			<h1>Tickets</h1>
-			<img id = "user_question" src = "/icon/user_question.png">
+			<img id="user_question" src="/icon/user_question.png">
 		</div>
 
-		<div id = "ticket_value">
-			<label for = "ticket_val">Ticket value</label>
-			<form>
-			<input type = "text" name = "ticket_val" placeholder = "Enter # minutes">
-			</form>
-		</div>
+		<form action="/countdown">
+			<div id="ticket_value">
+				<label for="ticket_val">Ticket value</label>
 
-		<div id = "ticket_number">
-			<label for = "ticket_num">Ticket number</label>
-			<form>
-			<input type = "text" name = "ticket_num" placeholder = "Enter # tickets">
-			</form>
-		</div>
-
-		<div id = "total_ticket">
-			<div id = "total_text">
-				<h3>Total break time</h3>
+				<input type="text" name="ticket_val" placeholder="Enter # minutes">
 			</div>
-			
-			<div class = "box"></div>
 
-			<h3>Minutes</h3>
+			<div id="ticket_number">
+				<label for="ticket_num">Ticket number</label>
+
+				<input type="text" name="ticket_num" placeholder="Enter # tickets">
+			</div>
+
+			<div id="total_ticket">
+				<div id="total_text">
+					<h3>Total break time</h3>
+				</div>
+
+				<div class="box"></div>
+
+				<h3>Minutes</h3>
 
 
-		<div id = "save">
-			<a href = "/Countdown"><button type = "save" class = "save_but">Save & Go</button></a>
-		</div>
- 
+				<div id="save">
+					<a href="/Countdown"><input type="submit" class="save_but" value="Save & Go"></a>
+				</div>
+			</div>
+
+		</form>
+
 
 	</div>
+
+</body>
