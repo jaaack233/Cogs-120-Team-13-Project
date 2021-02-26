@@ -14,6 +14,8 @@ var countdown = require('./routes/countdown');
 var taskSetting = require('./routes/taskSetting');
 var notiSetting = require('./routes/notiSetting');
 var login = require('./routes/login');
+var indivisual = require('./routes/indivisual');
+var groups = require('./routes/groups');
 const { Collection } = require('mongoose');
 // Example route
 // var user = require('./routes/user');
@@ -48,6 +50,8 @@ app.get('/countdown', countdown.view);
 app.get('/tasksetting', taskSetting.view);
 app.get('/notisetting', notiSetting.view);
 app.get('/login',login.view);
+app.get('/indivisual', indivisual.view);
+app.get('/groups', groups.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
