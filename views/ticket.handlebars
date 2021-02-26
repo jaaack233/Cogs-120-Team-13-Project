@@ -1,99 +1,49 @@
-.container {
-    width: 365px;
-    height: 812px;
-    border: 1px solid black;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #E8F5CE;
-}
+<html>
+
+<head>
+
+	<title>ticket</title>
+    <link rel="stylesheet" href="../public/css/ticket.css">
+
+</head>
 
 
-.container img{
-    position:absolute;
-    top:18px;
-    right:5px;
-}
+	<header>
 
-#page_title h1{
-    color: white;
-    margin-top: 0;
-    padding-top: 17px;
-    height: 50px;
-    background-color: #0F765A;
-    
-}
-#ticket_value{
-    padding-top:60px;
-}
-#ticket_value form{
-    display:inline;
-}
+	<div class = "container">
 
-#ticket_value label{
-    font-size:20px;
-    margin-right: 18px;
-}
+		<div id = "page_title">
+			<h1>Tickets</h1>
+			<img id = "user_question" src = "../public/icon/user_question.png">
+		</div>
 
-#ticket_value input{
-    height:60px;
-    font-size:18px;
-}
+		<div id = "ticket_value">
+			<label for = "ticket_val">Ticket value</label>
+			<form>
+			<input type = "text" name = "ticket_val" placeholder = "Enter # minutes">
+			</form>
+		</div>
 
-#ticket_number{
-    padding-top:80px;
-}
+		<div id = "ticket_number">
+			<label for = "ticket_num">Ticket number</label>
+			<form>
+			<input type = "text" name = "ticket_num" placeholder = "Enter # tickets">
+			</form>
+		</div>
 
-#ticket_number form{
-    display:inline;
-}
+		<div id = "total_ticket">
+			<div id = "total_text">
+				<h3>Total break time</h3>
+			</div>
+			
+			<div class = "box"></div>
 
-#ticket_number label{
-    font-size:20px;
-    margin-right: 6px;
-}
-
-#ticket_number input{
-    height:60px;
-    font-size:18px;
-}
-
-#save{
-    position:absolute;
-    bottom:10px;
-    left:120px;
-
-}
-
-.save_but{
-    padding:15px;
-    background:#0F765A;
-    color:white;
-}
-
-#total_text{
-    padding:30px;
-}
-
-.box{
-    margin-top: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    padding-top: 30px;
-    left: 50%;
-    height : 80px;
-    width:150px;
-    transform: translateX(-50%);
-    background-color: #F1EFEF;
-    border-radius: 10px;
-    overflow: auto;
-}
-
-h3{
-    padding:20px;
-}
+			<h3>Minutes</h3>
 
 
-	
+		<div id = "save">
+			<a href = "/Countdown"><button type = "save" class = "save_but">Save & Go</button></a>
+		</div>
+ 
+
+	</div>
