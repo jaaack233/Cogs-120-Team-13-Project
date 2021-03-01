@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #E8F5CE;
+    background-color: white;
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
     padding-top: 17px;
     padding-bottom: 0;
     height: 50px;
-    background-color: #0F765A;
+    background-color: #303C6C;
     padding: auto;
     border: none;
     text-align: center;

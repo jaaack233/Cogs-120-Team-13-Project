@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #E8F5CE;
+    background-color: white;
 }
 
 
@@ -21,8 +21,14 @@
     margin-top: 0;
     padding-top: 17px;
     height: 50px;
-    background-color: #0F765A;
-    
+    background-color: #303C6C;
+}
+
+#back {
+    height: 35px;
+    width: 35px;
+    top:15px;
+    left:5px;
 }
 #ticket_value{
     padding-top:60px;
@@ -61,15 +67,20 @@
 
 #save{
     position:absolute;
-    bottom:10px;
+    bottom:25px;
     left:130px;
-
 }
 
 .save_but{
     padding:15px;
-    background:#0F765A;
-    color:white;
+    background:#FBE8A6;
+    color:black;
+    margin-bottom: 50px;
+    font-size: 18px;
+    box-shadow:5px 5px 10px #aaaaaa;
+    border:none;
+    justify-content: center;
+    border-radius: 3px;
 }
 
 #total_text{
@@ -81,7 +92,7 @@
     display: flex;
     flex-wrap: wrap;
     position: relative;
-    padding-top: 30px;
+    padding-top: 20px;
     left: 50%;
     height : 80px;
     width:150px;

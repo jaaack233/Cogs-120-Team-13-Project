@@ -12,7 +12,7 @@
     font-size: 25px;
     height: 150px;
     width: 200px;
-    background-color: grey;
+    background-color: #D2FDFF;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -121,6 +121,8 @@ input:checked + label{
     border: none;
     border-radius: 5px;
     transform: translateX(-50%);
+    background-color:#FBE8A6;
+    box-shadow: 6px 6px 10px #aaaaaa;
 }
 
 #quit {
@@ -132,31 +134,53 @@ input:checked + label{
     border: none;
     border-radius: 5px;
     transform: translateX(-50%);
+    background-color:#FF605C;
+    box-shadow: 6px 6px 10px #aaaaaa;
 }
 
 .modal {
     position: absolute;
     width: 80%;
-    height: 350px;
+    height: 230px;
     left: 50%;
     top: 50%;
-    background-color: #909090;
+    background-color: #B4DFE5;
+    text-align: center;
+    font-size: 16px;
     border-radius: 10px;
     display: none;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
+#continue{
+  border: none;
+  background-color:#4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 #btn-yes {
     width: 100px;
     height: 30px;
-    background-color: red;
+    background-color: #FF605C;
+    text-align:center;
+    border:none;
 }
 
 #btn-no {
     width: 100px;
     height: 30px;
-    background-color: green;
+    background-color: #00CA4E;
+    text-align:center;
+    margin-top:15px;
+    border:none;
 }
 
 @keyframes countdown{
