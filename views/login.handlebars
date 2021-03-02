@@ -1,31 +1,36 @@
 <html>
+
 <head>
 	<title>Login Page</title>
 	<link rel="stylesheet" href="/css/login.css">
 	<script src="/js/login.js"></script>
 </head>
+
 <body>
 	<div class="screen">
 		<h1>Log In</h1>
 		<img src="/icon/focus.png">
 
 		<div id="login-error-msg-holder">
-      		<p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-   	    </div>
+			<p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+		</div>
 
-		<div class = "textboxs">
-			<form id="login-form">
-			<!-- <label for="username"><b style="font-size: 20px">Username</b></label>
+		<div class="textboxs">
+			<form id="login-form" action="/main" method="POST">
+				<!-- <label for="username"><b style="font-size: 20px">Username</b></label>
 			<input type ="text" placeholder ="Enter Username" name="username" required>
 
 			<label for="password" ><b style="font-size: 20px">Password</b></label>
 			<input type ="password" placeholder ="Enter Password" name="password" required> -->
-			<input type="text" name="username" id="username-field" class="login-form-field" placeholder="Enter Username">
-      		<input type="password" name="password" id="password-field" class="login-form-field" placeholder="Enter Password">
+				<input type="text" name="username" id="username-field" class="login-form-field"
+					placeholder="Enter Username">
+				<input type="password" name="password" id="password-field" class="login-form-field"
+					placeholder="Enter Password">
 
-			<input type="submit" value="Login" id="login-form-submit">
-		    </form>
+				<input type="submit" value="Login" id="login-form-submit">
+			</form>
 		</div>
 	</div>
 </body>
+
 </html>

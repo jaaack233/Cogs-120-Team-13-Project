@@ -15,11 +15,11 @@ var countdown = require('./routes/countdown');
 var taskSetting = require('./routes/taskSetting');
 var notiSetting = require('./routes/notiSetting');
 var login = require('./routes/login');
-var loginAut = require('./js/login');
 var indivisual = require('./routes/indivisual');
 var groups = require('./routes/groups');
 var ticket = require('./routes/ticket');
 var rank = require('./routes/rank');
+var middleware = require('./middleware/middleware');
 const { Collection } = require('mongoose');
 // Example route
 // var user = require('./routes/user');
@@ -49,13 +49,12 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 // Example route
 // app.get('/users', user.list);
-app.get('/main', main.view);
+app.post('/main',middleware.verify, main.view);
 app.get('/countdown', countdown.view);
 app.post('/countdown', countdown.post);
 app.get('/tasksetting', taskSetting.view);
 app.get('/notisetting', notiSetting.view);
 app.get('/login',login.view);
-app.get('/loginAut',login.verify);
 app.get('/indivisual', indivisual.view);
 app.get('/groups', groups.view);
 app.get('/tasksetting/ticket',ticket.view);
