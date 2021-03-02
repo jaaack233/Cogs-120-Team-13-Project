@@ -6,7 +6,8 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
+
 
 var index = require('./routes/index');
 var main = require('./routes/main');
@@ -32,7 +33,7 @@ app.set('view engine', 'handlebars');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:true}));
 app.use(express.methodOverride());
 app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
@@ -49,6 +50,7 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 app.get('/main', main.view);
 app.get('/countdown', countdown.view);
+app.post('/countdown', countdown.post);
 app.get('/tasksetting', taskSetting.view);
 app.get('/notisetting', notiSetting.view);
 app.get('/login',login.view);
