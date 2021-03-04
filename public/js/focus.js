@@ -20,12 +20,12 @@ $("#quit").click(function(){
 });
 
 $("#break").click(function(){
-  $(".modal#rest").css("display", "block");
-});
-
-$("#break").click(function(){
-  $(".modal#rest").css("display", "block");
-  $(".circle").css("animation-play-state", "paused");
+  if ($("#ticket_num").text()==0 || $("#ticket_num").text()==null) {
+    alert("You don't have enough tickets for break.")
+  } else {
+    $(".modal#rest").css("display", "block");
+    $(".circle").css("animation-play-state", "paused");  
+  }
 });
 
 $("#continue").click(function(){

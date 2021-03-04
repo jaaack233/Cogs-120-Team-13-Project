@@ -18,7 +18,7 @@ var login = require('./routes/login');
 var individual = require('./routes/individual');
 var groups = require('./routes/groups');
 var ticket = require('./routes/ticket');
-var rank = require('./routes/rank');
+var friends = require('./routes/friends');
 var middleware = require('./middleware/middleware');
 const { Collection } = require('mongoose');
 // Example route
@@ -59,7 +59,7 @@ app.get('/login',login.view);
 app.get('/individual', individual.view);
 app.get('/groups', groups.view);
 app.get('/tasksetting/ticket',ticket.view);
-app.get('/rank', rank.view);
+app.get('/friends', friends.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
