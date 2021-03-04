@@ -1,47 +1,43 @@
 <html>
-    <head>
-         <link rel="stylesheet" href="/css/main.css">
-         <script src="/js/focus.js"></script>
-    </head>
-    <body>
-        <div class="screen">
-            <div id="sidebar">
-                <img src="/icon/cross.png" style="height: 35px; width: 35px; margin-right: 0;" alt="" onclick="closeNav()">
-                <img id="user-pic" src="/icon/user.png" alt="">
-                <button class="btn-nav">Friends</button>
-                <button class="btn-nav">History</button>
-                <button class="btn-nav">Achievements</button>
-                <button class="btn-nav">Settings</button>
-            </div>
-            <div style="display: inline;">
-                <img id="burger" src="/icon/burger.png" alt="" onclick="openNav()">
-                <span class="money">${{jic006.credits}}</span>
-                <img id="moneyIcon" src="/icon/money.png" alt="">
-            </div>
-            <a href="/rank"><img id="rank" src="/icon/rank.png" alt=""></a>
-            <div class="center">
-                <h1 >Hi {{jic006.username}}!</h2>
+
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/focus.js"></script>
+</head>
+
+<body>
+    <div class="screen">
+        <div id="sidebar">
+            <img src="/icon/cross.png" style="height: 35px; width: 35px; margin-right: 0;" alt="" onclick="closeNav()">
+            <img id="user-pic" src="/icon/user.png" alt="">
+            <button class="btn-nav">History</button>
+            <button class="btn-nav">Settings</button>
+            <a href="/login">Logout</a>
+        </div>
+        <div style="display: inline;">
+            <img id="burger" src="/icon/burger.png" alt="" onclick="openNav()">
+            <span class="money">${{jic006.credits}}</span>
+            <img id="moneyIcon" src="/icon/money.png" alt="">
+        </div>
+    
+        <div class="center">
+            <h1>Hi {{jic006.username}}!</h2>
                 <img id="figure" src="/icon/figure.png" alt="">
                 <h4 id="level">Level: {{jic006.level}}</h4>
                 <a href="/tasksetting"><button class="btn-start">Start</button></a>
-                
-            </div>
-
-            <div class="switch">
-                <div>
-                    <a href="/groups"><img class="arrow" src="/icon/left.png" alt=""></a>
-                </div>
-                <div style="font-size: 30px">Tasks</div>
-                <div>
-                    <a href="/indivisual"><img class="arrow" src="/icon/right.png" alt=""></a>
-                </div>
-            </div>
-            <div>
-                <span style="margin-left: 35px; font-size: 18px">Groups</span>
-                <span style="margin-left: 175px; font-size: 18px">Individual</span>
-            </div>
-            
         </div>
-        
-    </body>
+
+        <a href="/individual"><button id="btn-todo" >Todo</button></a>
+
+        <div class="switch">
+            <div><a href="/main">Home</a></div>
+            <div><a href="/rank">Friends</a></div>
+            <div>Achievements</div>
+            <div>Me</div>
+        </div>  
+
+    </div>
+
+</body>
+
 </html>

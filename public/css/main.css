@@ -69,6 +69,7 @@ h2 {
     position: absolute;
     text-align: center;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 .btn-start:hover {
@@ -80,9 +81,18 @@ h2 {
 }
 
 .switch {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    position: absolute;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin-top: 20px;
+    align-items: center;
+    bottom: 0;
+    top: auto;
 }
 
 .arrow {
@@ -102,12 +112,14 @@ h2 {
 }
 
 #sidebar {
+    text-align: center;
+    color: black;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 0;
     position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     background-color: #D2FDFF; /* Black fallback color */
@@ -121,6 +133,7 @@ h2 {
     margin-bottom: 20px;
     margin-top: 10px;
     width: 80%;
+    height: 140px;
     background-color: #fff;
     
 }
@@ -137,3 +150,24 @@ h2 {
     box-shadow:2px 2px 5px #aaaaaa;
 }
 
+.switch a {
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+#btn-todo {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FBE8A6;
+    position: absolute;
+    right: 30px;
+    bottom: 150px;
+    font-size: 25px;
+}
+
+#btn-todo:hover {
+    cursor: pointer;
+}
