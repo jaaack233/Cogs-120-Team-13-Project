@@ -25,12 +25,15 @@ img {
     width: 50%;
 }
 
-h1 {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30%;
+p {
+    left: 50%;
+    top: 50%;
     text-align: center;
     position: absolute;
+    font-size: 4rem;
+    color: black;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
 
 #start {
