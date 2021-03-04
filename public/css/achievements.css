@@ -1,0 +1,33 @@
+.screen {
+    width: 365px;
+    height: 812px;
+    border: 1px solid black;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    margin-top: 0;
+    padding-top: 25px;
+    padding-bottom: 0;
+    height: 60px;
+    background-color: #303C6C;
+    padding: auto;
+    border: none;
+    text-align: center;
+}
+
+
+/*.screen img{
+    position:absolute;
+    top:22px;
+    right:5px;
+}*/
+
+#back {
+    height: 35px;
+    width: 35px;
+    top:10px;
+    left:0px;
+
+}

@@ -8,7 +8,10 @@
 
 <body>
     <div class="screen">
-        <h2>Task Setting</h2>
+        <div id="page_title">
+            <h1 id="title">Task Setting</h1>
+            <a href="/main"><img id="back" src="/icon/back.png" alt=""></a>
+        </div>
         <div class="clock-setting">
             <div>
                 <label for="">Hours</label>
@@ -118,12 +121,7 @@
 
         <div class="switch">
             <div>
-                <a href="/main"><img class="arrow" src="/icon/left.png" alt=""></a>
-                <p>Back</p>
-            </div>
-            <div>
-                <a href="/tasksetting/ticket"><img id="next" class="arrow" src="/icon/right.png" alt=""></a>
-                <p>Next</p>
+                <a href="/tasksetting/ticket"><button id = "btn-next">Next</button></a>
             </div>
         </div>
     </div>
