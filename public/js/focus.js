@@ -20,7 +20,7 @@ $("#quit").click(function(){
 });
 
 $("#break").click(function(){
-  if ($("#ticket_num").text()==0 || $("#ticket_num").text()==null) {
+  if ($("#ticket-num").text()==0 || $("#ticket-num").text()==null) {
     alert("You don't have enough tickets for break.")
   } else {
     $(".modal#rest").css("display", "block");

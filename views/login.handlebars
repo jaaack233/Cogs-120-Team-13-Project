@@ -11,17 +11,15 @@
 		<h1>Log In</h1>
 		<img src="/icon/focus.png">
 
-		{{!-- <div id="login-error-msg-holder">
+		<div id="login-error-msg-holder">
+			{{#unless loggedIn}}
 			<p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-		</div> --}}
+			{{/unless}}
+		</div>
 
 		<div class="textboxs">
 			<form id="login-form" action="/main" method="POST">
-				<!-- <label for="username"><b style="font-size: 20px">Username</b></label>
-			<input type ="text" placeholder ="Enter Username" name="username" required>
 
-			<label for="password" ><b style="font-size: 20px">Password</b></label>
-			<input type ="password" placeholder ="Enter Password" name="password" required> -->
 				<input type="text" name="username" id="username-field" class="login-form-field"
 					placeholder="Enter Username">
 				<input type="password" name="password" id="password-field" class="login-form-field"

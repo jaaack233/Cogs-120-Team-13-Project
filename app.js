@@ -7,6 +7,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express3-handlebars');
+var cookieParser = require('cookie-parser');
 
 
 var index = require('./routes/index');
@@ -40,6 +41,7 @@ app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cookieParser());
 
 // development only
 if ('development' == app.get('env')) {
