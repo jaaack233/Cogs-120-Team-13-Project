@@ -9,7 +9,28 @@
     background-color: white;
 }
 
-h2 {
+.screen img{
+    position:absolute;
+    top:22px;
+    right:5px;
+}
+
+/*#page_title h1{
+    color: white;
+    margin-top: 0;
+    padding-top: 17px;
+    height: 50px;
+    background-color: #303C6C;
+}*/
+
+#back {
+    height: 35px;
+    width: 35px;
+    top:10px;
+    left:0px;
+}
+
+#title {
     color: white;
     margin-top: 0;
     padding-top: 17px;
@@ -20,6 +41,23 @@ h2 {
     border: none;
     text-align: center;
     
+}
+
+#btn-next{
+    left: 0;
+    padding:15px;
+    width:100px;
+    background:#FBE8A6;
+    color:black;
+    margin-bottom: 50px;
+    font-size: 18px;
+    box-shadow:5px 5px 10px #aaaaaa;
+    border:none;
+    justify-content: center;
+    border-radius: 3px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .clock-setting {
@@ -83,7 +121,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    bottom: 0;
+    bottom: 200px;
 }
 
 .arrow {
@@ -179,5 +217,5 @@ p {
 }
 
 .switch div {
-    width: 50%;
+    width: 70%;
 }

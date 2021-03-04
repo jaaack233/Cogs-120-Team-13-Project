@@ -20,6 +20,8 @@ var groups = require('./routes/groups');
 var ticket = require('./routes/ticket');
 var friends = require('./routes/friends');
 var middleware = require('./middleware/middleware');
+var achievements = require('./routes/achievements');
+var history = require('./routes/history');
 const { Collection } = require('mongoose');
 // Example route
 // var user = require('./routes/user');
@@ -60,6 +62,8 @@ app.get('/individual', individual.view);
 app.get('/groups', groups.view);
 app.get('/tasksetting/ticket',ticket.view);
 app.get('/friends', friends.view);
+app.get('/achievements', achievements.view);
+app.get('/history', history.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
