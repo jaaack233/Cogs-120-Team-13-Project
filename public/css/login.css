@@ -4,7 +4,7 @@
     border: 1px solid black;
     position: relative;
     text-align: center;
-    background-color: #D2FDFF;
+	background-image: linear-gradient(#303C6C, #d2fdff);
 }
 
 body {
@@ -35,13 +35,37 @@ input[type=text], input[type=password] {
 	display: inline-block;
 	border: 1px solid #ccc;
 	box-sizing: border-box;
-	font-color:#ccc;
+	color:black;
 	font-size:16px;
+	border-radius: 25px;
+	background-color: white;
+	opacity: 0.5;
+	position: relative;
+	backdrop-filter: blur(4px);
+}
+
+input[type=submit] {
+	margin-top: 50px;
+	width: 200px;
+	height: 50px;
+	border: none;
+	border-radius: 25px;
+	font-size: 20px;
+	background-color: #FBE8A6;
+	transition: 0.2s;
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+	width: 220px;
+	height: 60px;
+	border-radius: 30px;
 }
 
 h1 {
 	margin-top:120px;
 	font-size: 50px;
+	color: #FBE8A6;
 }
 
 
@@ -57,20 +81,3 @@ label {
 	margin-left: 0;
 }
 
-button{
-	background-color: #FBE8A6;
-	color: black;
-	padding: 14px 20px;
-	margin: 8px 0;
-	cursor: pointer;
-	width: 80%;
-	font-size: 18px;
-	border:none;
-	border-radius: 
-    box-shadow: 5px 5px 10px #aaaaaa;
-    margin-top: 20px;
-}
-
-button: hover{
-	opacity : 0.8;
-}
