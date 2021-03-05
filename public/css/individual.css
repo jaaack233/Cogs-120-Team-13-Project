@@ -61,6 +61,7 @@ input:focus{
 
 #list li{
     background-color: white;
+    text-align: center;
     font-size: 16px;
     height: 40px;
     line-height: 40px;
