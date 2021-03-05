@@ -4,7 +4,11 @@
 
 	<title>ticket</title>
 	<link rel="stylesheet" href="/css/ticket.css">
-
+	<script>function openPop(){
+  	var popup = document.getElementById("popup")
+ 	popup.classList.toggle("show")
+ 	}
+ 	</script>
 </head>
 
 
@@ -14,8 +18,14 @@
 		<div id="page_title">
 			<h1>Tickets</h1>
 			<a href="/tasksetting"><img id="back" src="/icon/back.png" alt=""></a>
-			
+			<img id = "question_mark" src = "/icon/user_question.png" onclick = "openPop()">
 		</div>
+
+		<div id = "popup">
+			
+			<span id = "popuptext">Tickets are used for Breaks during task. Set up the length of abreak in ticket value andthe number of breaks in ticket frequency</span>
+		</div>
+
 
 		<form action="/countdown" method="POST">
 			<div id="ticket_value">
