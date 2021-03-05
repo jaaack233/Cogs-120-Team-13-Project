@@ -12,11 +12,28 @@
     <div class="screen">
         <div class="title">
             <h1>History</h1>
-            <h3 style ="margin-left:10px">Total money earned: $275</h3>
             <a href="/main"><img id="back" src="/icon/back.png" alt=""></a>
+            <button id="btn-day" onclick="showDay()">Day</button>
+            <button id="btn-week" onclick="showWeek()">Week</button>
+            <button id="btn-month" onclick="showMonth()">Month</button>
+           <!--  <h3 style ="margin-left:10px">Total money earned: $275</h3> -->
+            <img id="day" src="/icon/day.png" style="visibility:hidden"/>
+            <img id="week" src="/icon/chart.png" style="visibility:hidden"/>
+            <img id="month" src="/icon/month.png" style="visibility:hidden"/>
         </div>
-        <img id ="image" src="/icon/chart.png">
     </div>
+
+<script>
+    function showDay(){
+        document.getElementById('day').style.visibility="visible";
+    }
+    function showWeek(){
+        document.getElementById('week').style.visibility="visible";
+    }
+    function showMonth(){
+        document.getElementById('month').style.visibility="visible";
+    }
+</script>
 
 </body>
 

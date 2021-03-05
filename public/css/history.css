@@ -17,13 +17,35 @@ h1 {
     text-align: center;
 }
 
-#image {
+#day,#week,#month {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 40%;
-  width:150%;
+  width:85%;
 }
+
+#btn-day,#btn-week,#btn-month {
+    padding:10px;
+    background:#FBE8A6;
+    width:70px;
+    color:black;
+    font-size: 18px;
+    box-shadow:5px 5px 10px #aaaaaa;
+    border:none;
+    border-radius: 3px;
+    display:inline;
+}
+#btn-day {
+    margin-left:60px;
+}
+#btn-week {
+    margin-left:111x;
+}
+#btn-month {
+    margin-right::60px;
+}
+
 
 /*.screen img{
     position:absolute;
