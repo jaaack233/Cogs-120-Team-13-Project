@@ -17,6 +17,11 @@ h1 {
     text-align: center;
 }
 
+#image{
+    width:90%;
+    height:35%;
+    margin-left:15px;
+}
 
 /*.screen img{
     position:absolute;
@@ -25,9 +30,11 @@ h1 {
 }*/
 
 #back {
-    height: 35px;
+   height: 35px;
     width: 35px;
     top:10px;
     left:0px;
-
+    position:absolute;
+    top:22px;
+    right:5px;
 }

@@ -17,7 +17,6 @@ var taskSetting = require('./routes/taskSetting');
 var notiSetting = require('./routes/notiSetting');
 var login = require('./routes/login');
 var individual = require('./routes/individual');
-var groups = require('./routes/groups');
 var ticket = require('./routes/ticket');
 var friends = require('./routes/friends');
 var middleware = require('./middleware/middleware');
