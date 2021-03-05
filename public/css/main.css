@@ -1,63 +1,54 @@
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 .screen {
-    width: 100%;
-    height: 100%;
+    width: 365px;
+    height: 812px;
     border: 1px solid black;
     position: relative;
 }
 
-#top{
-    width:100%;
-    height:10%;
-}
-
-
-
-
-h1 {
-    text-align: center;
-    font-size: 70px;
+h2 {
+    text-align: left;
 }
 
 .center {
     margin: auto;
-    width: 100%;
-    height: 60%;
+    width: 260px;
+    height: 600px;
     display: block;
     text-align: center;
     position: relative;
 }
 
-/*.money {
-    height: 10%;
-    width: 20%;
+.money {
+    height: 40px;
+    width:200px;
     margin: 8px 0 0 200px; 
     font-size: 28px;
     background-color: #FBE8A6;
     border-radius: 60px;
     padding: 9px;
-}*/
+}
 
 #moneyIcon{
-    width:12%;
-    height:5%;
-    float:right;
-    margin-left:10px;
-    margin-top:20px;
+    width:50px;
+    height:50px;
+    margin-left:255px;
+    margin-top:-40px;
 }
 
 #figure {
-    width:800px;
-    height:600px;
-    margin-left:60px;
-    
+    width: 400px;
+    transform: translate(-50px, 40px);
 }
 
 #level {
-    font-size: 90px;
+    font-size: 35px;
     margin-bottom: 20px;
-    margin-top:100px;
-    margin-right:40px;
 }
 
 #rank {
@@ -70,132 +61,27 @@ h1 {
 }
 
 #btn-start {
-    height: 340px;
-    width: 340px;
-    font-size: 80px;
+    height: 140px;
+    width: 140px;
+    font-size: 30px;
     left: auto;
     right: auto;
-    margin-top: 80px;
-    bottom: 0px;
+    bottom: 20px;
     border-radius: 50%;
     border: none;
     background-color: #4CAF50;
     color: white;
     position: absolute;
-    top:1100px;
     text-align: center;
     transform: translateX(-50%);
     z-index: 1;
 }
 
-.btn-start:hover {
+#btn-start:hover {
     width: 140px;
     height: 140px;
     border: 2px solid #FBE8A6;
     color: #FBE8A6;
-    cursor: pointer;
-}
-
-/*.switch {
-    width: 100%;
-    height: 70px;
-    font-size: 20px;
-    color: white;
-    background-color: #303C6C;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    bottom: 0;
-    top: auto;
-    font-family: Arial, Helvetica, sans-serif;
-}*/
-
-
-#burger {
-    width: 15%;
-    margin-left: 15px;
-    margin-top: 15px;
-}
-
-#burger:hover {
-    cursor: pointer;
-}
-
-#sidebar {
-    text-align: center;
-    color: black;
-    display: block;
-    flex-direction: column;
-    height: 100%;
-    width: 0;
-    position: absolute; /* Stay in place */
-    z-index: 2; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: #D2FDFF; /* Black fallback color */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-#user-pic {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    width: 80%;
-    height: 400px;
-    background-color: #fff;
-    
-}
-
-
-#btn-ach{
-    width: 70%;
-    height: 5%;
-    background-color: #FBE8A6;
-}
-
-#btn-his{
-    width: 70%;
-    height: 5%;
-    background-color: #FBE8A6;
-
-}
-
-#btn-not{
-    width: 70%;
-    height: 5%;
-    background-color: #FBE8A6;
-}
-
-#log{
-
-    width:20%;
-
-}
-
-
-
-
-#btn-todo {
-    width: 100px;
-    height: 100px;
-    border: none;
-    border-radius: 50%;
-    background-color: #FBE8A6;
-    position: absolute;
-    right: 30px;
-    bottom: 80px;
-    font-size: 25px;
-}
-
-#btn-todo:hover {
-    width: 100px;
-    height: 100px;
-    border: 2px solid #F4976C;
-    color: #F4976C;
     cursor: pointer;
 }
 
@@ -217,6 +103,301 @@ h1 {
     border: 2px solid #303C6C;
     color: #303C6C;
     cursor: pointer;
+}    
+
+.switch {
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    top: auto;
 }
 
+.arrow {
+    width: 40px;
+    height: 40px;
+}
+
+#burger {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#burger:hover {
+    cursor: pointer;
+}
+
+#sidebar {
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 0;
+    position: absolute; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #D2FDFF; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+#user-pic {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 80%;
+    height: 140px;
+    background-color: #fff;
+    
+}
+
+.btn-nav {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    display: block;
+    width: 90%;
+    height: 40px;
+    background-color: #FBE8A6;
+    border:none;
+    box-shadow:2px 2px 5px #aaaaaa;
+}
+
+.switch a {
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+#btn-todo {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FBE8A6;
+    position: absolute;
+    right: 30px;
+    bottom: 150px;
+    font-size: 25px;
+}
+
+#btn-todo:hover {
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px) {
+    .screen {
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        position: relative;
+    }
+    
+    #top{
+        width:100%;
+        height:10%;
+    }
+    
+    
+    
+    
+    h1 {
+        text-align: center;
+        font-size: 70px;
+    }
+    
+    .center {
+        margin: auto;
+        width: 100%;
+        height: 60%;
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    
+    .money {
+        height: 10%;
+        width: 20%;
+        margin: 8px 0 0 200px; 
+        font-size: 28px;
+        background-color: #FBE8A6;
+        border-radius: 60px;
+        padding: 9px;
+    }
+    
+    #moneyIcon{
+        width:12%;
+        height:5%;
+        float:right;
+        margin-left:10px;
+        margin-top:20px;
+    }
+    
+    #figure {
+        width:800px;
+        height:600px;
+        margin-left:60px;
+        
+    }
+    
+    #level {
+        font-size: 90px;
+        margin-bottom: 20px;
+        margin-top:100px;
+        margin-right:40px;
+    }
+    
+    #rank {
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        transform: translate(10px, 130px);
+    }
+    
+    #btn-start {
+        height: 340px;
+        width: 340px;
+        font-size: 80px;
+        left: auto;
+        right: auto;
+        margin-top: 80px;
+        bottom: 0px;
+        border-radius: 50%;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        position: absolute;
+        top:1100px;
+        text-align: center;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+    
+    .btn-start:hover {
+        width: 140px;
+        height: 140px;
+        border: 2px solid #FBE8A6;
+        color: #FBE8A6;
+        cursor: pointer;
+    }
+    
+    #burger {
+        width: 15%;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+    
+    #burger:hover {
+        cursor: pointer;
+    }
+    
+    #sidebar {
+        text-align: center;
+        color: black;
+        display: block;
+        flex-direction: column;
+        height: 100%;
+        width: 0;
+        position: absolute; /* Stay in place */
+        z-index: 2; /* Sit on top */
+        left: 0;
+        top: 0;
+        background-color: #D2FDFF; /* Black fallback color */
+        overflow-x: hidden; /* Disable horizontal scroll */
+        transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+    
+    #user-pic {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 80%;
+        height: 400px;
+        background-color: #fff;
+        
+    }
+    
+    
+    #btn-ach{
+        width: 70%;
+        height: 5%;
+        background-color: #FBE8A6;
+    }
+    
+    #btn-his{
+        width: 70%;
+        height: 5%;
+        background-color: #FBE8A6;
+    
+    }
+    
+    #btn-not{
+        width: 70%;
+        height: 5%;
+        background-color: #FBE8A6;
+    }
+    
+    #log{
+    
+        width:20%;
+    
+    }
+      
+    
+    #btn-todo {
+        width: 100px;
+        height: 100px;
+        border: none;
+        border-radius: 50%;
+        background-color: #FBE8A6;
+        position: absolute;
+        right: 30px;
+        bottom: 80px;
+        font-size: 25px;
+    }
+    
+    #btn-todo:hover {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #F4976C;
+        color: #F4976C;
+        cursor: pointer;
+    }
+    
+    #btn-friends {
+        width: 100px;
+        height: 100px;
+        border: none;
+        border-radius: 50%;
+        background-color: #D2FDFF;
+        position: absolute;
+        left: 30px;
+        bottom: 80px;
+        font-size: 25px;
+    }
+    
+    #btn-friends:hover {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #303C6C;
+        color: #303C6C;
+        cursor: pointer;
+    }    
+
+}
 
