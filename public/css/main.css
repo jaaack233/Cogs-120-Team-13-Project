@@ -6,44 +6,58 @@
     position: relative;
 }
 
-h2 {
-    text-align: left;
+#top{
+    width:100%;
+    height:10%;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    font-size: 70px;
 }
 
 .center {
     margin: auto;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 60%;
     display: block;
     text-align: center;
     position: relative;
 }
 
-.money {
-    height: 40px;
-    width:200px;
+/*.money {
+    height: 10%;
+    width: 20%;
     margin: 8px 0 0 200px; 
     font-size: 28px;
     background-color: #FBE8A6;
     border-radius: 60px;
     padding: 9px;
-}
+}*/
 
 #moneyIcon{
-    width:50px;
-    height:50px;
-    margin-left:255px;
-    margin-top:-40px;
+    width:12%;
+    height:5%;
+    float:right;
+    margin-left:10px;
+    margin-top:20px;
 }
 
 #figure {
-    width: 400px;
-    transform: translate(-50px, 40px);
+    width:800px;
+    height:600px;
+    margin-left:60px;
+    
 }
 
 #level {
-    font-size: 35px;
+    font-size: 90px;
     margin-bottom: 20px;
+    margin-top:100px;
+    margin-right:40px;
 }
 
 #rank {
@@ -55,18 +69,20 @@ h2 {
     transform: translate(10px, 130px);
 }
 
-.btn-start {
-    height: 140px;
-    width: 140px;
-    font-size: 30px;
+#btn-start {
+    height: 340px;
+    width: 340px;
+    font-size: 80px;
     left: auto;
     right: auto;
+    margin-top: 80px;
     bottom: 0px;
     border-radius: 50%;
     border: none;
     background-color: #4CAF50;
     color: white;
     position: absolute;
+    top:1100px;
     text-align: center;
     transform: translateX(-50%);
     z-index: 1;
@@ -110,7 +126,7 @@ h2 {
 #sidebar {
     text-align: center;
     color: black;
-    display: flex;
+    display: block;
     flex-direction: column;
     height: 100%;
     width: 0;
@@ -129,22 +145,38 @@ h2 {
     margin-bottom: 20px;
     margin-top: 10px;
     width: 80%;
-    height: 140px;
+    height: 400px;
     background-color: #fff;
     
 }
 
-.btn-nav {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    display: block;
-    width: 90%;
-    height: 40px;
+
+#btn-ach{
+    width: 70%;
+    height: 5%;
     background-color: #FBE8A6;
-    border:none;
-    box-shadow:2px 2px 5px #aaaaaa;
 }
+
+#btn-his{
+    width: 70%;
+    height: 5%;
+    background-color: #FBE8A6;
+
+}
+
+#btn-not{
+    width: 70%;
+    height: 5%;
+    background-color: #FBE8A6;
+}
+
+#log{
+
+    width:20%;
+
+}
+
+
 
 
 #btn-todo {
