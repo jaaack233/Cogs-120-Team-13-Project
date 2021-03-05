@@ -63,7 +63,6 @@ app.get('/login',login.view);
 app.get('/individual', individual.view);
 app.post('/addTodo', todo.addTodo);
 app.post('/deleteTodo', todo.deleteTodo);
-app.get('/groups', groups.view);
 app.get('/tasksetting/ticket',ticket.view);
 app.get('/friends', friends.view);
 app.get('/achievements', achievements.view);
