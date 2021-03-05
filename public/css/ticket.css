@@ -112,3 +112,62 @@ h3{
     padding:20px;
 }
 
+#popup .show{
+    display: block;
+}
+
+#popup {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    #page_title h1{
+        padding-top: 3%;
+        height: 6%;
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .container img{
+        position:absolute;
+        width: 5rem;
+        top:30px;
+        right:30px;
+    }
+
+    #back {
+        position:absolute;
+        width: 5rem;
+        height: 5rem;
+        top:30px;
+        left:30px;
+    }
+
+    span {
+        font-size: 3rem;
+    }
+
+    label {
+        font-size: 4rem;
+    }
+}
