@@ -18,9 +18,9 @@
         <div id="list">
             <input type="text" placeholder="Enter to add new task">
             <ul>
-                <li><span><i class="far fa-trash-alt"></i></span> Finish A8</li>
-                <li><span><i class="far fa-trash-alt"></i></span> Shopping</li>
-                <li><span><i class="far fa-trash-alt"></i></span> Class Meeting</li>
+                {{#each todo}}
+                <li><span><i class="far fa-trash-alt"></i></span>{{this}}</li>
+                {{/each}}
             </ul>
         </div>   
     </div>
