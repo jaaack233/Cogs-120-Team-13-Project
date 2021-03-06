@@ -16,6 +16,59 @@
     right:10px;
 }
 
+<<<<<<< HEAD
+=======
+/*/*.modal {
+    position: absolute;
+    width: 80%;
+    height: 230px;
+    left: 50%;
+    top: 50%;
+    background-color: #B4DFE5;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    display: none;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}*/
+
+
+.modal {
+    position: absolute;
+    width: 80%;
+    height: 230px;
+    left: 50%;
+    top: 50%;
+    background-color: #B4DFE5;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    display: none;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#message {
+    padding:30px;
+    font-size: 18px
+}
+
+#close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  margin-right:5px;
+  font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+>>>>>>> 36184e8f65e799d4561e03b4783be84714f62d6c
 
 #page_title h1{
     color: white;
