@@ -33,6 +33,14 @@ $("#continue").click(function () {
   $(".modal#rest").css("display", "none");
 });
 
+$("#question_mark").click(function (){
+   $(".modal#popup").css("display", "block");
+});
+
+$("#close").click(function () {
+  $(".modal#popup").css("display", "none");
+});
+
 function startTimer(duration, display) {
   var timer = duration, minutes, seconds;
   setInterval(function () {
