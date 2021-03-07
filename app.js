@@ -23,6 +23,7 @@ var middleware = require('./middleware/middleware');
 var achievements = require('./routes/achievements');
 var history = require('./routes/history');
 var todo = require('./routes/todo');
+var addtask = require('./routes/addtask');
 const { Collection } = require('mongoose');
 // Example route
 // var user = require('./routes/user');
@@ -64,6 +65,7 @@ app.get('/individual', individual.view);
 app.post('/addTodo', todo.addTodo);
 app.post('/deleteTodo', todo.deleteTodo);
 app.get('/tasksetting/ticket',ticket.view);
+app.post('/addTask', addtask.addTask);
 app.get('/friends', friends.view);
 app.get('/achievements', achievements.view);
 app.get('/history', history.view);
