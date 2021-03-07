@@ -1,9 +1,8 @@
-
-/** {
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
-*/
+
 .screen {
     width: 365px;
     height: 812px;
@@ -18,8 +17,8 @@ h2 {
 
 .center {
     margin: auto;
-    width: 260px;
-    height: 600px;
+    width: 80%;
+    height: 75%;
     display: block;
     text-align: center;
     position: relative;
@@ -28,7 +27,7 @@ h2 {
 .money {
     height: 40px;
     width:200px;
-    margin: 8px 0 0 200px; 
+    margin: 8px 0 0 210px; 
     font-size: 28px;
     background-color: #FBE8A6;
     border-radius: 60px;
@@ -36,20 +35,20 @@ h2 {
 }
 
 #moneyIcon{
-    width:50px;
-    height:50px;
-    margin-left:255px;
-    margin-top:-40px;
+    position: absolute;
+    width:6vw;
+    right:17%;
+    top:3%;
 }
 
 #figure {
     width: 400px;
-    transform: translate(-50px, 40px);
+    transform: translate(-30px, 60px);
 }
 
 #level {
-    font-size: 10px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    transform: translateY(80%);
 }
 
 #rank {
@@ -87,27 +86,6 @@ h2 {
     cursor: pointer;
 }
 
-
-/*.switch {
-    width: 100%;
-    height: 60px;
-    font-size: 20px;
-    color: white;
-    background-color: blue;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    bottom: 0;
-    top: auto;
-}*/
-
-.arrow {
-    width: 40px;
-    height: 40px;
-}
-
 #burger {
     width: 50px;
     height: 50px;
@@ -141,7 +119,6 @@ h2 {
     margin-bottom: 20px;
     margin-top: 10px;
     width: 80%;
-    height: 140px;
     background-color: #fff;
 }
 
@@ -156,21 +133,6 @@ h2 {
     border:none;
     box-shadow:2px 2px 5px #aaaaaa;
 }
-<<<<<<< HEAD
-
-#log{
-
-    width:20%;
-}
-
-=======
-/*
-.switch a {
-    color: white;
-    font-style: none;
-    text-decoration: none;
-}*/
->>>>>>> 36184e8f65e799d4561e03b4783be84714f62d6c
 
 #btn-todo {
     width: 100px;
@@ -193,62 +155,137 @@ h2 {
     cursor: pointer;
 }
 
-/*@media only screen and (max-width:1000px) {
+#btn-friends {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-color: #D2FDFF;
+    position: absolute;
+    left: 30px;
+    bottom: 80px;
+    font-size: 25px;
+    box-shadow: 0 2px 2px #888888;
+}
+
+#btn-friends:hover {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #303C6C;
+    color: #303C6C;
+    cursor: pointer;
+}    
+
+#level {
+font-size: 35px;
+margin-top: 50px;
+}
+
+@media only screen and (max-width:1000px) {
+
     .screen {
         width: 100%;
         height: 100%;
-        border: 1px solid black;
-        position: relative;
-    }*/
+        border: none;
+    }
     
-   /* #top{
+   #top{
         width:100%;
-        height:10%;
-    }*/
+        height:8%;
+    }
     
     
     #btn-friends {
-        width: 100px;
-        height: 100px;
-        border: none;
-        border-radius: 50%;
-        background-color: #D2FDFF;
-        position: absolute;
+        width: 300px;
+        height: 300px;
         left: 30px;
-        bottom: 80px;
-        font-size: 25px;
-        box-shadow: 0 2px 2px #888888;
+        bottom: 10%;
+        font-size: 60px;
     }
 
     #btn-friends:hover {
-        width: 100px;
-        height: 100px;
-        border: 2px solid #303C6C;
+        width: 300px;
+        height: 300px;
+        border: 4px solid #303C6C;
         color: #303C6C;
         cursor: pointer;
     }    
+
+    #btn-start {
+        width: 400px;
+        height: 400px;
+        font-size: 70px;
+    }
+
+    #btn-start:hover {
+        width: 400px;
+        height: 400px;
+        border: 4px solid #FBE8A6;
+        color: #FBE8A6;
+        cursor: pointer;
+    }
+
+    #btn-todo {
+        width: 300px;
+        height: 300px;
+        border: none;
+        border-radius: 50%;
+        background-color: #FBE8A6;
+        position: absolute;
+        right: 30px;
+        bottom: 10%;
+        font-size: 60px;
+        box-shadow: 0 2px 2px #888888;
+    }
+    
+    #btn-todo:hover {
+        width: 300px;
+        height: 300px;
+        border: 4px solid #F4976C;
+        color: #F4976C;
+        cursor: pointer;
+    }
     
     #level {
     font-size: 35px;
     margin-bottom: 20px;
     }
 
-   /* h1 {
+    h1 {
         text-align: center;
         font-size: 70px;
+    }
+
+    #burger {
+        width: 150px;
+        height: 150px;
+        margin-left: 15px;
+        margin-top: 15px;
     }
     
     
     #figure {
-       width: 400px;
+        margin-top: 50px;
+       width: 130%;
        transform: translate(-50px, 40px);
+       margin-left: -20px;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    #moneyIcon{
+        position: absolute;
+        width:13%;
+        right:17%;
+        top:3%;
     }
     
     #level {
         font-size: 90px;
         margin-bottom: 20px;
-        margin-top:100px;
-        margin-right:40px;
+        margin-top:70px;
     }
     
     #rank {
@@ -261,30 +298,41 @@ h2 {
     }
     
     
-    #btn-ach{
-        width: 70%;
-        height: 5%;
-        background-color: #FBE8A6;
-    }
-    
-    #btn-his{
-        width: 70%;
-        height: 5%;
-        background-color: #FBE8A6;
-    
-    }
-    
-    #btn-not{
-        width: 70%;
-        height: 5%;
-        background-color: #FBE8A6;
-    }
-    
     #log{
     
         width:20%;
     
-    }
-      
+    } 
 
-*/
+    .money {
+        text-align: right;
+        position: absolute;
+        height: 60px;
+        right: 7%;
+        top: 3.5%;
+        font-size: 60px;
+        background-color: #FBE8A6;
+        border-radius: 60px;    
+    }
+
+    .btn-nav {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        display: block;
+        width: 90%;
+        height: 6rem;
+        font-size: 2rem;
+        background-color: #FBE8A6;
+        border:none;
+        box-shadow:2px 2px 5px #aaaaaa;
+    }
+
+    #log {
+        font-size: 3rem;
+    }
+
+    #sidebar {
+        text-align: center;
+    }
+}

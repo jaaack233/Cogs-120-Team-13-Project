@@ -137,3 +137,6 @@ $("#next").click(function () {
   console.log(time);
 });
 
+//function for history
+
+
