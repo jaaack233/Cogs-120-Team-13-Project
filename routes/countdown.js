@@ -1,4 +1,4 @@
-const data = require('../data.json');
+const data = require('../task.json');
 
 
 exports.view = function(req, res){
@@ -6,10 +6,7 @@ exports.view = function(req, res){
 };
 
 exports.post = function (req, res) {
-    const ticket_data = {
-        "ticket_val": req.body.ticket_val,
-        "ticket_num": req.body.ticket_num
-    };
-    console.log(ticket_data);
-    res.render('countdown',ticket_data);
+    data['task']['ticket_val'] = req.body.ticket_val;
+    data['task']['ticket_num'] = req.body.ticket_num;
+    res.render('countdown',data);
 }

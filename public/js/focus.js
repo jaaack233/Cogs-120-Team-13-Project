@@ -110,31 +110,38 @@ $("input[name='ticket_num']").focus(function () {
 
 // method for set clock
 
-$("#next").click(function () {
+$("#btn-next").click(function () {
   // data["jic006"]["tasks"].push({});
-  const time = {};
+  const task = {};
 
   $("#hour li").each(function () {
     const dis = $(this).position().top;
     if (dis == 60) {
-      time["hour"] = $(this).text();
-      //   let tasks = data["jic006"]["tasks"];
-      //   tasks[tasks.length - 1]["hour"] = element.text();
-      //   time["hour"] = element.text();
+      task["hour"] = $(this).text();
     }
   });
 
   $("#min li").each(function () {
     const dis = $(this).position().top;
     if (dis == 60) {
-      time["min"] = $(this).text();
-      //   let tasks = data["jic006"]["tasks"];
-      //   tasks[tasks.length - 1]["min"] = element.text();
-      //   time["min"] = element.text();
+      task["min"] = $(this).text();
     }
   });
 
-  console.log(time);
+  const list = [];
+  $("#list li").each(function() {
+    list.push($(this).text());
+  });
+
+  task['list'] = list;
+
+  $.ajax({
+    url: '/addTask', 
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(task)
+  });
+
 });
 
 //function for history
