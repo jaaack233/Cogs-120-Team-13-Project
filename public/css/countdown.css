@@ -5,7 +5,7 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-image: linear-gradient(#303C6C,#d2fdff,#303C6C);
 }
 
 #tasks {
@@ -13,11 +13,12 @@
     font-size: 25px;
     height: 150px;
     width: 200px;
-    background-color: #D2FDFF;
+    background-color: transparent;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     overflow: scroll;
+    color: white;
 }
 
 .clock {
@@ -74,7 +75,7 @@ input:checked + label{
     position: absolute;
     transform: translate(-50%, 40%);
     justify-content: space-between;
-    background-color: white;
+    background-color: transparent;
 }
 
 .ticket-display {
@@ -125,7 +126,7 @@ input:checked + label{
     border-radius: 5px;
     transform: translateX(-50%);
     background-color:#FBE8A6;
-    box-shadow: 6px 6px 10px #aaaaaa;
+    box-shadow: 3px 3px 10px black;
 }
 
 #quit {
@@ -138,7 +139,7 @@ input:checked + label{
     border-radius: 5px;
     transform: translateX(-50%);
     background-color:#FF605C;
-    box-shadow: 6px 6px 10px #aaaaaa;
+    box-shadow: 3px 3px 10px black;
 }
 
 .modal {
