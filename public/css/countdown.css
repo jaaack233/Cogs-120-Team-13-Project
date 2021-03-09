@@ -148,13 +148,16 @@ input:checked + label{
     height: 230px;
     left: 50%;
     top: 50%;
-    background-color: #B4DFE5;
+    background-color: #303C6C;
+    color: white;
     text-align: center;
     font-size: 16px;
     border-radius: 10px;
     display: none;
     transform: translate(-50%, -50%);
     z-index: 2;
+    opacity: 0.95;
+    backdrop-filter: blur(4px);
 }
 
 #continue{
