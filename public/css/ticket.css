@@ -34,28 +34,28 @@
 
 .modal {
     position: absolute;
-    width: 80%;
-    height: 230px;
+    width: 60%;
+    height: 20%;
     left: 50%;
     top: 50%;
     background-color: #B4DFE5;
-    text-align: center;
-    font-size: 16px;
+    text-align: left;
     border-radius: 10px;
     display: none;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index:2;
+    
 }
 
 #message {
     padding:30px;
-    font-size: 18px
+    font-size: 35px
 }
 
 #close {
   color: white;
   float: right;
-  font-size: 28px;
+  height:70px;
   margin-right:5px;
   font-weight: bold;
 }
@@ -81,8 +81,9 @@
     top:15px;
     left:5px;
 }
-#ticket_value{
+/*#ticket_value{
     padding-top:60px;
+
 }
 #ticket_value form{
     display:inline;
@@ -97,7 +98,7 @@
     height:60px;
     font-size:18px;
 }
-
+*/
 #ticket_number{
     padding-top:80px;
 }
@@ -124,22 +125,23 @@
 
 .save_but{
     left: 0;
-    padding:15px;
+    padding:50px;
     background:#FBE8A6;
     color:black;
-    margin-bottom: 50px;
-    font-size: 18px;
+    margin-top:50px;
+    font-size: 30px;
     box-shadow:5px 5px 10px #aaaaaa;
     border:none;
     justify-content: center;
     border-radius: 3px;
-    position: absolute;
+    position:absolute;
     left: 50%;
     transform: translateX(-50%);
 }
 
 #total_text{
-    padding:30px;
+    padding:60px;
+    font-size: 40px;
 }
 
 .box{
@@ -149,39 +151,23 @@
     position: relative;
     padding-top: 20px;
     left: 50%;
-    height : 80px;
-    width:150px;
+    height : 300px;
+    width: 350px;
     transform: translateX(-50%);
     background-color: #F1EFEF;
     border-radius: 10px;
     overflow: auto;
     justify-content: center;
     text-align: center;
+    font-size: 40px;
 }
 
 h3{
-    padding:20px;
+    font-size: 50px;
+    padding:50px;
 }
 
 
-#popup {
-    
-    position: absolute;
-    width: 20%;
-    height: 10%;
-    background-color: #B4DFE5;
-    left: 700px;
-    border-radius: 10px;
-}
-
-#popuptext{
-    font-size:20px;
-}
-
-#popup .show{
-    visibility:visible;
-    animation:fadeIn;
-}
 
 
 @media only screen and (max-width: 1000px) {
@@ -225,6 +211,53 @@ h3{
         left:30px;
     }
 
+    #ticket_value{
+        margin-top:18%;
+        height:10%;
+
+    }
+    #ticket_value form{
+        display:inline;
+    }
+
+    #ticket_value label{
+        font-size:47px;
+        margin-right: 10px;
+        margin-left:-10px;
+        
+    }
+
+    #ticket_value input{
+        height:60px;
+        font-size:40px;
+        height:70%;
+        width:50%;
+    }
+       
+    #ticket_number{
+        margin-top:10%;
+        height:10%;
+    }
+
+    #ticket_number form{
+        display:inline;
+    }
+
+    #ticket_number label{
+        font-size:47px;
+        margin-left:10px;
+        margin-right: 15px;
+    }
+
+    #ticket_number input{
+        height:60px;
+        font-size:40px;
+        height:70%;
+        width:50%;
+    } 
+
+
+   
     span {
         font-size: 3rem;
     }
@@ -232,4 +265,5 @@ h3{
     label {
         font-size: 4rem;
     }
+
 }
