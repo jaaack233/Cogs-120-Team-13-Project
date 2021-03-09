@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .screen {
     width: 365px;
     height: 812px;
@@ -5,19 +10,20 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-image: linear-gradient(#303C6C,#d2fdff,#303C6C);
 }
 
 #tasks {
     margin-top: 50px;
     font-size: 25px;
-    height: 150px;
-    width: 200px;
-    background-color: #D2FDFF;
+    height: 25%;
+    width: 50%;
+    background-color: transparent;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     overflow: scroll;
+    color: white;
 }
 
 .clock {
@@ -67,14 +73,14 @@ input:checked + label{
 .ticket-area {
     display: flex;
     flex-direction: row;
-    height: 50px;
-    width: 240px;
+    height: 5%;
+    width: 60%;
     left: 50%;
     top: 60%;
     position: absolute;
     transform: translate(-50%, 40%);
     justify-content: space-between;
-    background-color: white;
+    background-color: transparent;
 }
 
 .ticket-display {
@@ -115,75 +121,77 @@ input:checked + label{
     height: 50px;
 }
 
-#break {
-    position: absolute;
-    width: 200px;
-    height: 50px;
-    left: 50%;
-    top :75%;
-    border: none;
-    border-radius: 5px;
-    transform: translateX(-50%);
-    background-color:#FBE8A6;
-    box-shadow: 6px 6px 10px #aaaaaa;
-}
-
-#quit {
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    left: 50%;
-    top :85%;
-    border: none;
-    border-radius: 5px;
-    transform: translateX(-50%);
-    background-color:#FF605C;
-    box-shadow: 6px 6px 10px #aaaaaa;
-}
-
 .modal {
     position: absolute;
     width: 80%;
-    height: 230px;
+    height: 30%;
     left: 50%;
     top: 50%;
-    background-color: #B4DFE5;
+    background-color: #303C6C;
+    color: white;
     text-align: center;
-    font-size: 16px;
+    justify-content: center;
+    font-size: 1rem;
     border-radius: 10px;
     display: none;
     transform: translate(-50%, -50%);
     z-index: 2;
+    opacity: 0.95;
+    backdrop-filter: blur(4px);
 }
 
 #continue{
-  border: none;
-  background-color:#4CAF50;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    width: 60%;
+    height: 20%;
+    border: none;
+    background-color:#4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+#break {
+    position: absolute;
+    width: 50%;
+    height: 5%;
+    left: 50%;
+    top :75%;
+    border: none;
+    transform: translateX(-50%);
+    background-color:#FBE8A6;
+    box-shadow: 3px 3px 10px black;
+}
+
+#quit {
+    position: absolute;
+    width: 40%;
+    height: 5%;
+    left: 50%;
+    top :85%;
+    border: none;
+    transform: translateX(-50%);
+    background-color:#FF605C;
+    box-shadow: 3px 3px 10px black;
 }
 
 #btn-yes {
-    width: 100px;
-    height: 30px;
     background-color: #FF605C;
     text-align:center;
     border:none;
 }
 
 #btn-no {
-    width: 100px;
-    height: 30px;
     background-color: #00CA4E;
     text-align:center;
     margin-top:15px;
     border:none;
+}
+
+h2 {
+    margin-top: 50px;
 }
 
 @keyframes countdown{
@@ -193,5 +201,112 @@ input:checked + label{
 
     100% {
         stroke-dashoffset: 691;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .screen {
+        width: 100%;
+        height: 100%;
+        font-size: 50px;
+    }
+
+    .modal {
+        font-size: 1em;
+    }
+
+
+    #tasks {
+        margin-top: 10%;
+        font-size: 4rem;
+        height: 25%;
+        width: 50%;
+        background-color: transparent;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: scroll;
+        color: white;
+    }
+    
+    #ticket {
+        width: 200px;
+        position: relative;
+        top: -50px;
+        left: -10px;
+        transform: rotate(39deg);
+    }
+    
+    #ticket-val {
+        position: absolute;
+        width: 150px;
+        top: 50%;
+        left: 30%;
+        transform: translate(-20%, -50%);
+    }
+    
+    #mult {
+        width: 100px;
+        position: relative;
+        top: 5px;
+        transform: translateX(-15px);
+    }
+    
+
+    #ticket-num {
+        font-size: 2em;
+        width: 150px;
+        height: 150px;
+        text-align: center;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .circle {
+        stroke-dasharray: 1650;
+        stroke-dashoffset: 0;
+        transform-origin: center;
+        transform: rotate(-90deg);
+        animation: countdown 60s;
+        animation-timing-function: linear;
+        animation-play-state: running;
+    }
+
+    .clock {
+        left: 0;
+        top: 0;
+        width: 60vw;
+        height: 60vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -70%);
+        z-index: 1;
+        position: absolute;
+    }
+
+    button {
+        font-size: 2rem;
+        border-radius: 50px;
+    }
+
+    span {
+        font-size: 6rem;
+    }
+
+    @keyframes countdown{
+        0% {
+            stroke-dashoffset: 0;
+        }
+    
+        100% {
+            stroke-dashoffset: 1650;
+        }
     }
 }

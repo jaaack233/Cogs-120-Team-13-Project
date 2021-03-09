@@ -10,6 +10,13 @@ function closeNav() {
 }
 
 // functions for countdown
+$(document).ready(function () {
+  let h = parseInt($('#h').text());
+  let m = parseInt($('#m').text());
+  let s = 3600*h + 60*m;
+  $(".circle").css("animation", "countdown linear " + s + "s");
+});
+
 
 $("#btn-no").click(function () {
   $(".modal").css("display", "none");
