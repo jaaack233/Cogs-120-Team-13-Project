@@ -46,8 +46,7 @@
     display: none;
     color: black;
     transform: translate(-50%, -50%);
-    z-index:2;
-    
+    z-index:2;   
 }
 
 #message {
@@ -291,10 +290,14 @@
     }
 
     #total_ticket h3{
-    
     font-size:50px;
     padding:50px;
-}
+    }
+
+    #number {
+        margin-top:18%;
+        font-size:8rem;
+    }
     
     .save_but{
     left: 0;
@@ -310,7 +313,34 @@
     position:absolute;
     left: 50%;
     transform: translateX(-50%);
-}
+    }
+
+    .modal {
+        position: absolute;
+        width: 80%;
+        height: 30%;
+        left: 50%;
+        top: 50%;
+        background-color: #B4DFE5;
+        text-align: left;
+        border-radius: 60px;
+        display: none;
+        color: black;
+        transform: translate(-50%, -50%);
+        z-index:2;   
+    }
+
+    #message {
+        width:85%;
+        margin-left:8%;
+        margin-top:10%;
+        font-size:3rem;
+    }
+
+    #close {
+        margin-right:50px;
+         margin-top:30px;
+    }
 
     span {
         font-size: 3rem;
