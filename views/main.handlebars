@@ -8,7 +8,7 @@
 <body>
     <div class="screen">
         <div id="sidebar">
-            <img src="/icon/cross.png" style="height: 35px; width: 35px; margin-right: 0;" alt="" onclick="closeNav()">
+            <img id="cross" src="/icon/cross.png"  alt="" onclick="closeNav()">
             <img id="user-pic" src="/icon/user.png" alt="">
             <a href="/history"><button class = "btn-nav" id = "btn-his">History</button></a>
             <a href="/achievements"><button class ="btn-nav" id = "btn-ach">Achievements</button></a>
@@ -23,9 +23,9 @@
     
         <div class="center">
             <h1>Hi {{jic006.username}}!</h1>
-                <img id="figure" src="/icon/figure.png" alt="">
-                <h4 id="level">Level: {{jic006.level}}</h4>
-                <a href="/tasksetting"><button id="btn-start">Start</button></a>
+            <div class="thumb"><img id="figure" src="/icon/figure.png" alt=""></div>
+            <h4 id="level">Level: {{jic006.level}}</h4>
+            <a href="/tasksetting"><button id="btn-start">Start</button></a>
         </div>
 
         <a href="/individual"><button id="btn-todo" >To do</button></a>
