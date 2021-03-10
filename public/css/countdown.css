@@ -229,6 +229,7 @@ h2 {
         overflow: scroll;
         color: white;
     }
+
     
     #ticket {
         width: 200px;
@@ -269,6 +270,17 @@ h2 {
         position: absolute;
     }
 
+    input[type=checkbox]
+        {
+          /* Double-sized Checkboxes */
+          -ms-transform: scale(4); /* IE */
+          -moz-transform: scale(4); /* FF */
+          -webkit-transform: scale(4); /* Safari and Chrome */
+          -o-transform: scale(4); /* Opera */
+          transform: scale(4);
+          padding: 10px;
+        }
+
     .circle {
         stroke-dasharray: 1650;
         stroke-dashoffset: 0;
@@ -296,7 +308,13 @@ h2 {
         margin-left:10%;
     }
 
+    h2 {
+        width: 80%;
+        margin-left:10%;
+    }
+
     h3 {
+        margin-left:10%;
         margin-top:15%;
     }
 
@@ -305,6 +323,10 @@ h2 {
         width:20%;
         height:15%;
         font-size:50px;
+    }
+
+    #continue {
+        margin-top:10%;
     }
 
     button {
