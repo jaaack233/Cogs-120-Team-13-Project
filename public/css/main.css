@@ -356,6 +356,9 @@ margin-top: 50px;
         text-align: center;
         height:120%;
         width:60%;
+        z-index: 2; /* Sit on top */
+        display: flex;
+        flex-direction: column;
     }
 
     #cross {
