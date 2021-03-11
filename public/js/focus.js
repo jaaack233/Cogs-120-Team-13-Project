@@ -123,14 +123,14 @@ $("#btn-next").click(function () {
 
   $("#hour li").each(function () {
     const dis = $(this).position().top;
-    if (dis == 60) {
+    if (dis == 60 || dis == 160) {
       task["hour"] = $(this).text();
     }
   });
 
   $("#min li").each(function () {
     const dis = $(this).position().top;
-    if (dis == 60) {
+    if (dis == 60 || dis == 160) {
       task["min"] = $(this).text();
     }
   });

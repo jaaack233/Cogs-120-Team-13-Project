@@ -89,7 +89,7 @@
     top: 60px;
     left: 0;
     width: 100%;
-    height: 50px;
+    height: 30px;
     background-color: #F07F14;
     opacity: .3;
     pointer-events: none;
@@ -294,18 +294,29 @@ p {
         list-style: none;
         margin: 0;
         padding: 0;
-        height: 220px;
+        height: 400px;
         width: 100%;
         overflow: scroll;
         margin:auto;
         font-size: 25px;
         scroll-snap-type: y mandatory;
-        
+    }
+
+    .scroll::after {
+        content: "";
+        position: absolute;
+        top: 160px;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: #F07F14;
+        opacity: .3;
+        pointer-events: none;
     }
 
     .roller li {
         display: flex;
-        height: 30%;
+        height: 80px;
         width: 100%;
         font-size:50px;
         justify-content: center;
@@ -345,7 +356,7 @@ p {
 
     #list li{
         background-color: white;
-        font-size: 30px;
+        font-size: 50px;
         height: 10%;
         line-height: 50px;
         padding:30px;
