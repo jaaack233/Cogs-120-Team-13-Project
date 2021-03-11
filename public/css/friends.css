@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .screen {
-    width: 365px;
+    width: 375px;
     height: 812px;
     border: 1px solid black;
     position: relative;
@@ -9,27 +14,24 @@
     background-color: white;
 }
 
-#back {
-   height: 35px;
-   width: 35px;
-   top:10px;
-   left:0px;
-    position:absolute;
-    top:22px;
-    right:5px;
-}
-
-h2 {
+#title {
     color: white;
     margin-top: 0;
     padding-top: 17px;
     padding-bottom: 0;
     height: 50px;
-    background-color:#303C6C;;
+    background-color: #303C6C;
     padding: auto;
     border: none;
-    text-align: center;
-    
+    text-align: center;   
+}
+
+#back {
+    height: 40px;
+    width: 40px;
+    top:10px;
+    left:10px;
+    position: absolute;
 }
 
 #list ul{
@@ -74,4 +76,30 @@ a {
     color: white;
     font-style: none;
     text-decoration: none;
+}
+
+#plus {
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#plus:hover {
+    cursor: pointer;
+}
+
+#plus div {
+    position: absolute;
+    width: 25px;
+    height: 3.5px;
+    background-color: #fff;
+}
+
+#verti {
+    transform: rotate(90deg);
 }

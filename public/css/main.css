@@ -1,14 +1,13 @@
 * {
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
 .screen {
-    width: 365px;
+    width: 375px;
     height: 812px;
     border: 1px solid black;
     position: relative;
-
 
 }
 
@@ -45,10 +44,16 @@ h1 {
     top:3%;
 }
 
+#cross {
+    height: 35px; 
+    width: 35px; 
+    margin-right: 0;
+}
+
 #figure {
     width: 400px;
     transform: translate(-30px, 60px);
-    margin-bottom:;
+    margin-bottom: 30px;
 }
 
 #level {
@@ -124,6 +129,7 @@ h1 {
     margin-bottom: 20px;
     margin-top: 10px;
     width: 80%;
+    height: 150px;
     background-color: #fff;
 }
 
@@ -183,8 +189,14 @@ h1 {
 
 #level {
 font-size: 35px;
-margin-top: 50px;
+margin-top: 0px;
 }
+
+.thumb {
+    overflow: hidden;
+}
+
+
 
 @media only screen and (max-width:1000px) {
 
@@ -192,24 +204,22 @@ margin-top: 50px;
         width: 100%;
         height: 100%;
         border: none;
+        overflow: hidden;
     }
+
+    
     
    #top{
         width:100%;
         height:8%;
     }
-/*    #btn-friends,#btn-start,#btn-todo{ 
-        margin-left:8%;
-    }*/
-
     
     #btn-friends {
         width: 300px;
         height: 300px;
-        left: 150px;
-        bottom: 10%;
+        left: 50px;
+        bottom: 100px;
         font-size: 60px;
-        top:90%;
     }
 
     #btn-friends:hover {
@@ -221,11 +231,10 @@ margin-top: 50px;
     }    
 
     #btn-start {
-        top:88%;
+        top:75%;
         width: 420px;
         height: 420px;
         font-size: 70px;
-        margin-left:10%;
     }
 
     #btn-start:hover {
@@ -243,11 +252,10 @@ margin-top: 50px;
         border-radius: 50%;
         background-color: #FBE8A6;
         position: absolute;
-        right: 10px;
-        bottom: 10%;
+        right: 50px;
+        bottom: 100px;
         font-size: 60px;
         box-shadow: 0 2px 2px #888888;
-        top:90%;
     }
     
     #btn-todo:hover {
@@ -277,31 +285,33 @@ margin-top: 50px;
     #burger {
         width: 150px;
         height: 150px;
-        margin-left: 70px;
-        margin-top: 70px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
     
     
     #figure {
-        margin-top: 80px;
-       width: 140%;
-       transform: translate(-50px, 40px);
-       margin-left: 40px;
+        margin-top: 50px;
+        width: 130%;
+        transform: translate(-50px, 40px);
+        margin-left: 20px;
+        overflow: hidden;
     }
 
 
     #moneyIcon{
         position: absolute;
         width:15%;
-        right:5%;
-        top:3%;
+        right:150px;
+        top:60px;
     }
     
     #level {
         font-size: 100px;
         margin-bottom: 20px;
         margin-top:100px;
-        margin-left:120px;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     #rank {
@@ -325,10 +335,10 @@ margin-top: 50px;
         position: absolute;
         height: 80px;
         top: 3.5%;
+        right: 50px;
         font-size: 80px;
         background-color: #FBE8A6;
         border-radius: 60px;
-        right:-5%;
 
     }
 
@@ -354,14 +364,38 @@ margin-top: 50px;
 
     #sidebar {
         text-align: center;
-        height:120%;
-        width:60%;
-        z-index: 2; /* Sit on top */
-        display: flex;
-        flex-direction: column;
+        height:100%;
+        width:0%;
     }
 
     #cross {
         margin-top:50px;
         margin-left:50px;
     }
+
+    #user-pic {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        width: 80%;
+        height: 350px;
+        background-color: #fff;
+    }
+
+    #cross {
+        width: 100px;
+        height: 100px;
+    }
+
+    .thumb {
+        overflow: hidden;
+        width: 90%;
+    }
+
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

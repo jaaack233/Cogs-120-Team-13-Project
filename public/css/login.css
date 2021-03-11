@@ -17,16 +17,16 @@ body {
 }
 
 #login-error-msg {
-  width: 23%;
+  width: 80%;
   text-align: center;
-  margin: 0;
+  margin: auto;
   padding: 5px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   color: #8a0000;
   border: 1px solid #8a0000;
   background-color: #e58f8f;
-  opacity: 0;
+  opacity: 1;
 }
 
 #error-msg-second-line {
@@ -92,7 +92,6 @@ label {
 	.screen {
 		width: 100%;
 		height: 100%;
-		border: 1px solid black;
 		position: relative;
 		text-align: center;
 		background-image: linear-gradient(#303C6C, #d2fdff);
@@ -106,17 +105,17 @@ label {
 		left: 50%;
 		position: absolute;
 		transform: translate(-50%,-50%);
-		  width: 80%;
-		  text-align: center;
-		  margin-left: auto;
-		  margin-right: auto;
-		  margin-top: 10%;
-		  padding: 5px;
-		  font-size: 3rem;
-		  font-weight: bold;
-		  color: #8a0000;
-		  border: 1px solid #8a0000;
-		  background-color: #e58f8f;
+		width: 80%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10%;
+		padding: 5px;
+		font-size: 3rem;
+		font-weight: bold;
+		color: #8a0000;
+		border: 1px solid #8a0000;
+		background-color: #e58f8f;
 	}
 	
 	
