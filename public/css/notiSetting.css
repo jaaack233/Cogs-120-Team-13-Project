@@ -152,12 +152,13 @@ img {
   }
 
   h2 {
-    height: 5%;
+    padding-top: 60px;
+    height: 7%;
   }
 
   h3 {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .control {
@@ -206,7 +207,7 @@ img {
   .btn {
     height: 100px;
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%,100%);
   }
@@ -214,7 +215,7 @@ img {
   #back {
     width: 100px;
     height: 100px;
-    margin-top: -10px;
+    margin-top: 15px;
   }
 
 }
