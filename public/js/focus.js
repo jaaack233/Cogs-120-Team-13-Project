@@ -15,6 +15,7 @@ $(document).ready(function () {
   let m = parseInt($('#m').text());
   let s = 3600*h + 60*m;
   $(".circle").css("animation", "countdown linear " + s + "s");
+  startTimer();
 });
 
 
@@ -49,28 +50,37 @@ $("#close").click(function () {
   $(".modal#popup").css("display", "none");
 });
 
-function startTimer(duration, display) {
-  var timer = duration, minutes, seconds;
+function startTimer() {
   setInterval(function () {
-    minutes = parseInt(timer / 60, 10);
-    seconds = parseInt(timer % 60, 10);
+    hours = parseInt($('#h').text(), 10);
+    minutes = parseInt($('#m').text(), 10);
+    seconds = parseInt($('#s').text(), 10);
+
+    
+    if (seconds === 0 & minutes > 0) {
+      seconds = 59;
+      minutes--;
+    } else if (seconds === 0 & minutes === 0){
+      seconds = 0;
+    } else {
+      seconds--;
+    }
+
+    if (minutes === 0 & hours > 0) {
+      minutes = 59;
+      hours--;
+    } 
 
     minutes = minutes < 10 ? "0" + minutes : minutes;
     seconds = seconds < 10 ? "0" + seconds : seconds;
+    hours = hours < 10 ? "0" + hours : hours;
 
-    display.text(minutes + ":" + seconds);
+    $('#s').text(seconds);
+    $('#m').text(minutes);
+    $('#h').text(hours);
 
-    if (--timer < 0) {
-      timer = duration;
-    }
   }, 1000);
 }
-
-jQuery(function ($) {
-  var fiveMinutes = 60 * 5,
-    display = $('#time');
-  startTimer(fiveMinutes, display);
-});
 
 
 
