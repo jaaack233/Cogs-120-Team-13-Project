@@ -32,6 +32,7 @@ $("#break").click(function () {
   } else {
     $(".modal#rest").css("display", "block");
     $(".circle").css("animation-play-state", "paused");
+    $('#ticket-num').text(parseInt($('#ticket-num').text()) - 1);
   }
 });
 
